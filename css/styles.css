@@ -3,6 +3,9 @@
   font-family: Roboto, Raleway;
   color: black;
   font-size: 14px;
+  width: 1600px;
+  height: 1880px;
+  display: flex;
 }
 
 .efectiv {
@@ -122,3 +125,9 @@ ul > li > figure > figcaption > .text {
   font-size: 14px;
   line-height: 1.71;
 }
+
+.container{
+  width: 1200px;
+  margin-left: 200px;
+}
+
