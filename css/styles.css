@@ -4,20 +4,24 @@
   color: black;
   font-size: 14px;
   width: 1600px;
-  height: 1880px;
+  /* height: 1880px; */
   display: flex;
+  align-content: center;
 }
 
 .efectiv {
   color: white;
   background-color: #2f303a;
   line-height: 1.36;
+  height: 600px;
+  width: 1600px;
 }
 
 .header-under-list {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.167;
+  margin: 200px;
 }
 
 .image-title {
@@ -32,6 +36,13 @@
 
 .list-style {
   list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.global-list-img{
+  flex-wrap: wrap;
 }
 
 .link {
@@ -124,10 +135,48 @@ ul > li > figure > figcaption > .text {
 .lorem-text {
   font-size: 14px;
   line-height: 1.71;
+  width: 270px;
 }
 
 .container{
   width: 1200px;
-  margin-left: 200px;
+  margin: 0 0 0 200px;
+  box-sizing: content-box;
+  padding: 15px;
 }
 
+ul>li>figure>.portfolio-windows{
+  width: 370px;
+  padding: 0;
+  margin: 0;
+}
+
+ul>li:not(:last-child)>img.work-list-img{
+  margin-right: 30px;
+}
+
+.head-cont{
+  width: 100%;
+  display: flex;
+  height: 80px;
+  align-items: center;
+  border: 1px solid #ECECEC;
+}
+
+a.web.logo{
+  width: 145px;
+}
+
+nav.navigation{
+  width: 347px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 93px;
+}
+
+p.kontakt{
+  width: 693px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 371px;
+}
