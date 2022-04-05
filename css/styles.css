@@ -95,7 +95,7 @@
   background-color: var(--secondary-color);
 }
 
-li.img-title {
+.img-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -315,6 +315,9 @@ ul.menu-margin>li:not(:last-child){
 ul>li.list-item{
   margin: 30px 0 0 30px;
   flex-basis: calc(100%/3-30px);
+  background: #FFFFFF;
+  border: 1px solid #EEEEEE;
+  box-sizing: border-box;
 }
 
 figure{
@@ -322,5 +325,13 @@ figure{
 }
 
 .test{
-  margin-left: -200px;
+  margin-left: 0;
+}
+
+.port-title{
+  padding-left: 24px;
+}
+
+.port-text{
+  text-align: left;
 }
