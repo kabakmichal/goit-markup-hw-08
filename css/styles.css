@@ -172,7 +172,7 @@
 
 .container{
   width: 1200px;
-  margin: 0 0 0 200px;
+  margin: 0 auto;
   box-sizing: content-box;
   display: flex;
   justify-content: center;
@@ -250,10 +250,6 @@ ul>li:not(:last-child) {
   background-color: var(--third-color);
 }
 
-.our-work{
-  margin-left: 0;
-}
-
 .foot-list{
   flex-direction: column;
   padding-bottom: 56px;
@@ -322,10 +318,6 @@ ul>li.list-item{
 
 figure{
   margin: 0 auto;
-}
-
-.test{
-  margin-left: 0;
 }
 
 .port-title{
