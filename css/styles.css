@@ -322,6 +322,14 @@ ul>li.list-item{
   background: #FFFFFF;
   border-bottom: 1px solid #EEEEEE;
   box-sizing: border-box;
+  cursor: pointer;
+}
+
+.list-item:focus,
+.list-item:hover{
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+  0px 4px 4px rgba(0, 0, 0, 0.06),
+  1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 figure{
@@ -368,24 +376,13 @@ figure{
 }
 
 .client-boxes{
-  /* width: 170px;
-  height: 92px;
-  border: 1px solid #AFB1B8;
-  border-radius: 4px; */
   display: flex;
   justify-content: center;
-  align-items: center;
+  margin: 0 auto;
   cursor: pointer;
-  /* box-sizing: border-box; */
 }
 
-.client-boxes:hover{
-  fill: var(--secondary-color);
-  color: var(--secondary-color);
-  border: var(--secondary-color);
-}
-
-.ramka{
+.client-box{
   width: 170px;
   height: 92px;
   border: 1px solid #AFB1B8;
@@ -394,9 +391,11 @@ figure{
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  fill: var(--ninth-color);
 }
 
-.ramka:hover{
+.client-box:hover,
+.client-box:focus{
   fill: var(--secondary-color);
   border-color: var(--secondary-color);
 }
@@ -443,10 +442,6 @@ ol>li:not(:last-child) {
   padding: 72px 0 100px 0;
 }
 
-.icons{
-  fill: var(--ninth-color);
-}
-
 .head-nav{
   color: var(--main-color);
   fill: var(--main-color);
@@ -471,4 +466,11 @@ ol>li:not(:last-child) {
 
 .t-social{
   padding-bottom: 30px;
+}
+
+.cards-shadow:hover,
+.cards-shadow:focus{
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+  0px 4px 4px rgba(0, 0, 0, 0.06),
+  1px 4px 6px rgba(0, 0, 0, 0.16);
 }
