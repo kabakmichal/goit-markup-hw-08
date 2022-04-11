@@ -367,8 +367,25 @@ figure{
   justify-content: space-between;
 }
 
-
 .client-boxes{
+  /* width: 170px;
+  height: 92px;
+  border: 1px solid #AFB1B8;
+  border-radius: 4px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  /* box-sizing: border-box; */
+}
+
+.client-boxes:hover{
+  fill: var(--secondary-color);
+  color: var(--secondary-color);
+  border: var(--secondary-color);
+}
+
+.ramka{
   width: 170px;
   height: 92px;
   border: 1px solid #AFB1B8;
@@ -377,6 +394,11 @@ figure{
   justify-content: center;
   align-items: center;
   cursor: pointer;
+}
+
+.ramka:hover{
+  fill: var(--secondary-color);
+  border-color: var(--secondary-color);
 }
 
 .join-us{
