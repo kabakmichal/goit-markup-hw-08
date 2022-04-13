@@ -129,6 +129,11 @@
   margin-bottom: 200px;
 }
 
+button.button-ef:hover,
+button.button-ef:focus{
+  color: var(--four-color);
+}
+
 .buttons-line {
   line-height: 1.62;
 }
@@ -354,7 +359,6 @@ figure{
 
 .phone-kontakt{
   padding-left: 30px;
-  padding-right: 10px;
 }
 
 .portfolio{
@@ -445,9 +449,12 @@ ol>li:not(:last-child) {
 .head-nav{
   color: var(--main-color);
   fill: var(--main-color);
+  display: flex;
+  align-items: center;
 }
 
-.head-nav:hover{
+.head-nav:hover,
+.head-nav:focus{
   color: var(--secondary-color);
   fill: var(--secondary-color);
 }
@@ -473,4 +480,12 @@ ol>li:not(:last-child) {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
   0px 4px 4px rgba(0, 0, 0, 0.06),
   1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.mail-koperta{
+  margin-right: 10px;
+}
+
+.phone-call{
+  margin-right: 10px;
 }
