@@ -338,23 +338,6 @@ ul>li.list-item{
   overflow: hidden;
 }
 
-/* ul>li.list-item:hover .overlay{
-  transform: translateY(0);
-}
-
-.overlay{
-  position: absolute;
-  top: 294px;
-  left: 0;
-  width: 100%;
-  min-height: 294px;
-  background: rgba(33, 150, 243, 0.9);
-
-  z-index: 1;
-  transform: translateY(-100%);
-  transition: transform 250ms ease;
-} */
-
 .list-item:focus,
 .list-item:hover{
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
@@ -565,4 +548,46 @@ ol>li:not(:last-child) {
   bottom: -32px;
   left: 0;
   border-radius: 2px;
+}
+
+.work-overlay{
+  z-index: -2;
+}
+
+.box{
+  position: relative;
+  max-height: 294px;
+  overflow: hidden;
+}
+
+.list-item:hover .overlay {
+  transform: translateY(-100%);
+}
+
+.overlay{
+  position: absolute;
+  top: 294px;
+  left: 0;
+  height: 294px;
+  width: 100%;
+
+  background: rgba(33, 150, 243, 0.9);
+
+  transform: translateY(0);
+  transition: transform 250ms ease;
+}
+
+.text-overlay{
+  margin: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+  /* or 156% */
+  margin-right: 21px;
+  
+  padding: 49px 24px;
+
+  letter-spacing: 0.03em;
+  
+  color: var(--third-color);
 }
