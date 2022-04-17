@@ -550,6 +550,8 @@ ol>li:not(:last-child) {
   border-radius: 2px;
 }
 
+/* ===== PORTFOLIO HIDDEN TEXT ==== */
+
 .work-overlay{
   z-index: -2;
 }
@@ -592,6 +594,8 @@ ol>li:not(:last-child) {
   color: var(--third-color);
 }
 
+/* ===== END OF PORTFOLIO HIDDENT TEXT ===== */
+
 /* ===== BACKDROP ===== */
 
 .backdrop{
@@ -616,6 +620,8 @@ ol>li:not(:last-child) {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
   0px 1px 1px rgba(0, 0, 0, 0.14),
   0px 2px 1px rgba(0, 0, 0, 0.2);
+
+  animation: modal-in 2000ms;
 }
 
 .close-btn{
@@ -638,6 +644,28 @@ ol>li:not(:last-child) {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+}
+
+@keyframes modal-in {
+  0%{
+    transform: translateX(-200%);
+    width: 0%;
+  }
+
+  100%{
+    transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes modal-out {
+  0% {
+    transform: translateX(-50%, -50%);
+  }
+  
+  100% {
+    transform: translate(-200%);
+    width: 0%;
+  }
 }
 
 /* ===== END OF BACKDROP ===== */
