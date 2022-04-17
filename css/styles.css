@@ -132,6 +132,8 @@
 button.button-ef:hover,
 button.button-ef:focus{
   color: var(--four-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .buttons-line {
@@ -148,6 +150,8 @@ button.button-ef:focus{
 .buttons:focus {
   color: var(--secondary-color);
   opacity: 100%;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-footer-adres {
@@ -225,9 +229,9 @@ a.web.logo{
 }
 
 .navigation{
-  width: 347px;
+  min-width: 254px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   margin-left: 93px;
   align-items: center;
 }
@@ -299,6 +303,8 @@ ul>li:not(:last-child) {
   0px 1px 2px rgba(0, 0, 0, 0.08),
   0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .port-menu{
@@ -328,13 +334,34 @@ ul>li.list-item{
   border-bottom: 1px solid #EEEEEE;
   box-sizing: border-box;
   cursor: pointer;
+  position: relative;
+  overflow: hidden;
 }
+
+/* ul>li.list-item:hover .overlay{
+  transform: translateY(0);
+}
+
+.overlay{
+  position: absolute;
+  top: 294px;
+  left: 0;
+  width: 100%;
+  min-height: 294px;
+  background: rgba(33, 150, 243, 0.9);
+
+  z-index: 1;
+  transform: translateY(-100%);
+  transition: transform 250ms ease;
+} */
 
 .list-item:focus,
 .list-item:hover{
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
   0px 4px 4px rgba(0, 0, 0, 0.06),
   1px 4px 6px rgba(0, 0, 0, 0.16);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 figure{
@@ -343,6 +370,7 @@ figure{
 
 .port-title{
   padding-left: 24px;
+  z-index: 2;
 }
 
 .port-text{
@@ -359,10 +387,6 @@ figure{
 
 .phone-kontakt{
   padding-left: 30px;
-}
-
-.portfolio{
-  padding: 0 46px;
 }
 
 .icons-advantages{
@@ -402,6 +426,8 @@ figure{
 .client-box:focus{
   fill: var(--secondary-color);
   border-color: var(--secondary-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .join-us{
@@ -436,6 +462,8 @@ ol>li:not(:last-child) {
 .list-foot-socials:focus,
 .list-foot-socials:hover{
   background-color: var(--secondary-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .adres{
@@ -457,6 +485,8 @@ ol>li:not(:last-child) {
 .head-nav:focus{
   color: var(--secondary-color);
   fill: var(--secondary-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-socials{
@@ -469,6 +499,8 @@ ol>li:not(:last-child) {
 .team-socials:hover{
   background-color: var(--secondary-color);
   fill: var(--third-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .t-social{
@@ -480,6 +512,8 @@ ol>li:not(:last-child) {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
   0px 4px 4px rgba(0, 0, 0, 0.06),
   1px 4px 6px rgba(0, 0, 0, 0.16);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mail-koperta{
@@ -488,4 +522,47 @@ ol>li:not(:last-child) {
 
 .phone-call{
   margin-right: 10px;
+}
+
+.our-work{
+  max-height: 294px;
+}
+
+.text-work{
+  position: relative;
+}
+
+.text-our-work{
+  display: block;
+  position: absolute;
+  margin: 0;
+  z-index: 2;
+  bottom: 0;
+  font-weight: 700;
+  color: var(--third-color);
+  line-height: 1.42;
+  letter-spacing: 0.03em;
+  min-width: 370px;
+  max-height: 70px;
+  text-align: center;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.8),rgba(47, 48, 58, 0.8));
+  text-transform: uppercase;
+}
+
+.current-nav{
+  position: relative;
+}
+
+.current::after{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 4px;
+  display: bloc;
+  background-color: var(--secondary-color);
+  bottom: -32px;
+  left: 0;
+  border-radius: 2px;
 }
