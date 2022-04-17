@@ -127,6 +127,7 @@
 
 .button-ef{
   margin-bottom: 200px;
+  animation: modal-out;
 }
 
 button.button-ef:hover,
@@ -543,7 +544,6 @@ ol>li:not(:last-child) {
   content: "";
   width: 100%;
   height: 4px;
-  display: bloc;
   background-color: var(--secondary-color);
   bottom: -32px;
   left: 0;
@@ -606,6 +606,7 @@ ol>li:not(:last-child) {
   height: 100%;
   background-color: rgba(0,0,0,0.2);
   z-index: 2;
+  animation-play-state: running;
 }
 
 .modal{
@@ -621,7 +622,8 @@ ol>li:not(:last-child) {
   0px 1px 1px rgba(0, 0, 0, 0.14),
   0px 2px 1px rgba(0, 0, 0, 0.2);
 
-  animation: modal-in 2000ms;
+  animation: modal-in 3000ms;
+  animation-play-state: inherit;
 }
 
 .close-btn{
@@ -644,6 +646,7 @@ ol>li:not(:last-child) {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+  animation-play-state: paused;
 }
 
 @keyframes modal-in {
