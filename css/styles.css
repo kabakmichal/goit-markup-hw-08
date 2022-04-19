@@ -606,7 +606,9 @@ ol>li:not(:last-child) {
   height: 100%;
   background-color: rgba(0,0,0,0.2);
   z-index: 2;
-  animation-play-state: running;
+
+  opacity: 1;
+  transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal{
@@ -621,9 +623,6 @@ ol>li:not(:last-child) {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
   0px 1px 1px rgba(0, 0, 0, 0.14),
   0px 2px 1px rgba(0, 0, 0, 0.2);
-
-  animation: modal-in 3000ms;
-  animation-play-state: inherit;
 }
 
 .close-btn{
@@ -644,31 +643,7 @@ ol>li:not(:last-child) {
 
 .is-hidden{
   opacity: 0;
-  visibility: hidden;
   pointer-events: none;
-  animation-play-state: paused;
-}
-
-@keyframes modal-in {
-  0%{
-    transform: translateX(-200%);
-    width: 0%;
-  }
-
-  100%{
-    transform: translate(-50%, -50%);
-  }
-}
-
-@keyframes modal-out {
-  0% {
-    transform: translateX(-50%, -50%);
-  }
-  
-  100% {
-    transform: translate(-200%);
-    width: 0%;
-  }
 }
 
 /* ===== END OF BACKDROP ===== */
