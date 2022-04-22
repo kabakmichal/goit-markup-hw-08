@@ -638,6 +638,13 @@ ol>li:not(:last-child) {
   padding: 0;
 }
 
+.close-btn:focus,
+.close-btn:hover{
+  fill: var(--secondary-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .is-hidden{
   opacity: 0;
   pointer-events: none;
@@ -715,4 +722,13 @@ ol>li:not(:last-child) {
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+}
+
+.modal-header{
+  margin: 0;
+}
+
+.modal-form{
+  display: flex;
+  flex-direction: column;
 }
