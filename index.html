@@ -407,20 +407,18 @@
                         zapisz się do newslettera
                     </p>
 
-                    <div class="input-button">
-                        <form class="footer-form" name="newsletter">
-                            <label>
-                                <input class="newsletter-input" type="email" name="mail-newsletter" placeholder="E-mail" />
-                            </label>
-                        </form>
+                    <form class="footer-form" name="newsletter">
+                        <label>
+                            <input class="newsletter-input" type="email" name="mail-newsletter" placeholder="E-mail" />
+                        </label>
 
                         <buton type="submit" class="buttons newsletter-btn">
                             <a class="join">Zapisz się</a>
                             <svg class="foot-send" width="24" height="24">
                                 <use href="./images/icons.svg#icon-send"></use>
-                            </svg>
+                                </svg>
                         </buton>
-                    </div>
+                    </form>
                 </div>
 
             </div>
@@ -435,30 +433,72 @@
                     </svg>
                 </button>
 
-                <p class="modal-header">
-                    Zostaw swoje dane w forlumarzu poniżej
-                </p>
+                
 
                 <form class="modal-form">
-                    <label>
-                        Imie
-                        <input type="text" name="username"/>
+
+                    <p class="modal-header">
+                        Zostaw swoje dane w forlumarzu poniżej
+                    </p>
+
+                    <label class="lab-modal">
+                        <div class="head-inputs">Imie</div>
+
+                        <div class="icon-input">
+                            <input class="newsletter-input modal-inputs" type="text" name="username"/>
+
+                            <svg class="modal-icon" height="18" width="18">
+                                <use href="./images/icons.svg#icon-person"></use>
+                            </svg>
+                        </div>
                     </label>
 
-                    <label>
-                        Telefon
-                        <input type="text" name="user-phone-number" />
+                    <label class="lab-modal">
+                        <div class="head-inputs">Telefon</div>
+
+                        <div class="icon-input">
+                            <input class="newsletter-input modal-inputs" type="text" name="user-phone-number" />
+
+                            <svg class="modal-icon modal-icon-new" height="13" width="13">
+                                <use href="./images/icons.svg#icon-phone"></use>
+                            </svg>
+                        </div>
                     </label>
 
-                    <label>
-                        Email
-                        <input type="text" name="user-email" />
+                    <label class="lab-modal">
+                        <div class="head-inputs">Email</div>
+
+                        <div class="icon-input">
+                            <input class="newsletter-input modal-inputs" type="text" name="user-email" />
+
+                            <svg class="modal-icon modal-icon-new" height="13" width="13">
+                                <use href="./images/icons.svg#icon-black-mail"></use>
+                            </svg>
+                        </div>
                     </label>
 
-                    <label>
-                        Komentarz
-                        <input type="text" name="user-coment" />
+                    <label class="lab-modal coment">
+                        <div class="head-inputs">Komentarz</div>
+                        <textarea class="text-coment-modal" rows="7" name="user-coment" placeholder="Wprowadź komentarz"></textarea>
                     </label>
+
+                    <label class="statute lab-check">
+                        <input class="statute-checked" type="checkbox" name="statute" value="statute"/>
+
+                        <svg class="check-box" height="15" width="16">
+                            <use href="./images/icons.svg#icon-checked-box"></use>
+                        </svg>
+
+                        <a class="statute-text">
+                            Oświadczam iż akceptuję &nbsp;<a class="link-statute" href="#">Regulamin</a>&nbsp; i &nbsp;<a class="link-statute" href="#">Politykę Prywatności.</a>
+                        </a>
+
+                    </label>
+
+                    <div class="send-button">
+                        <button type="submit" class="buttons send-btn">Wyślij</button> 
+                    </div>
+
                 </form>
 
             </div>
