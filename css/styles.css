@@ -716,6 +716,8 @@ ol>li:not(:last-child) {
   outline: none;
   border-color: var(--secondary-color);
   fill: var(--secondary-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .input-button{
@@ -804,6 +806,8 @@ ol>li:not(:last-child) {
 .text-coment-modal:focus{
   outline: none;
   border-color: var(--secondary-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .statute{
