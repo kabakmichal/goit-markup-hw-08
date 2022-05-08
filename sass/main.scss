@@ -1,4 +1,7 @@
-body{
-    padding: 0;
-    margin: 0;
-}
+@import "../sass/utils/_vars.scss";
+@import "../sass/components/head";
+@import "../sass/components/tlo";
+@import "../sass/components/section";
+@import "../sass/components/our-team";
+@import "../sass/components/clients";
+@import "../sass/components/footer";

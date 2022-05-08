@@ -1,0 +1,35 @@
+.clients__list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.client-boxes {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.client-box {
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    fill: var(--ninth-color);
+}
+
+.client-box:hover,
+.client-box:focus {
+    fill: var(--secondary-color);
+    border-color: var(--secondary-color);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+

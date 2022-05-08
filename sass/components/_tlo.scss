@@ -1,0 +1,57 @@
+.tlo {
+    background-color: var(--fifth-color);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url('../images/bg_head.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    align-items: center;
+    display: flex;
+}
+
+.tlo-column {
+    flex-direction: column;
+    text-align: center;
+}
+
+.efectiv {
+    margin: 0;
+    color: var(--third-color);
+    line-height: 1.36;
+    width: 696px;
+    font-size: 44px;
+    padding-top: 200px;
+}
+
+.buttons {
+    font-size: 16px;
+    line-height: 1.88;
+    cursor: pointer;
+    width: 200px;
+    color: var(--third-color);
+    background-color: var(--secondary-color);
+    padding: 10px 0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: 0;
+}
+
+.buttons:hover,
+.buttons:focus {
+    color: var(--secondary-color);
+    opacity: 100%;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-ef {
+    margin-bottom: 200px;
+}
+
+button.button-ef:hover,
+button.button-ef:focus {
+    color: var(--four-color);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
