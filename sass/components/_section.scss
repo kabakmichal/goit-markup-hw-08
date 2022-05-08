@@ -78,3 +78,15 @@ ul>li:not(:last-child) {
     background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8));
     text-transform: uppercase;
 }
+
+.link:hover,
+.link:focus{
+    color: var(--secondary-color);
+    opacity: 100%;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(04, 0, 0.2, 1);
+}
+
+figure {
+    margin: 0 auto;
+}
