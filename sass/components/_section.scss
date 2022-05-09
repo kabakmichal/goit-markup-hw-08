@@ -5,7 +5,10 @@
     align-items: center;
 }
 
-.list-style {
+.list-style,
+.team-list,
+.employee-list,
+.lorem-list {
     list-style-type: none;
     display: flex;
     margin: 0;
@@ -54,11 +57,6 @@ ul>li:not(:last-child) {
 
 .text-work {
     position: relative;
-}
-
-.work-list-img {
-    width: 370px;
-    height: 294px;
 }
 
 .text-our-work {

@@ -1,29 +1,26 @@
-.port-menu {
+.portfolio-menu {
     display: flex;
     justify-content: center;
     margin: 0;
     padding-bottom: 50px;
 }
 
-ul.menu-margin>li:not(:last-child) {
+ul.portfolio-menu__margin>li:not(:last-child) {
     margin-right: 8px;
 }
 
-.buttons-line {
-    line-height: 1.62;
-}
-
-.buttons-portfolio {
+.portfolio-list__button {
     background-color: var(--seventh-color);
     color: var(--four-color);
     padding: 6px 22px 6px 22px;
     width: auto;
     box-sizing: border-box;
     box-shadow: none;
+    line-height: 1.62;
 }
 
-.buttons-portfolio:hover,
-.buttons-portfolio:focus {
+.portfolio-list__button:hover,
+.portfolio-list__button:focus {
     background-color: var(--secondary-color);
     color: var(--third-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),

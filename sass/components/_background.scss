@@ -1,4 +1,4 @@
-.tlo {
+.background {
     background-color: var(--fifth-color);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
@@ -10,12 +10,12 @@
     display: flex;
 }
 
-.tlo-column {
+.background-column {
     flex-direction: column;
     text-align: center;
 }
 
-.efectiv {
+.background-column__header {
     margin: 0;
     color: var(--third-color);
     line-height: 1.36;
@@ -45,12 +45,12 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.button-ef {
+.background-column__button {
     margin-bottom: 200px;
 }
 
-button.button-ef:hover,
-button.button-ef:focus {
+.background-column__button:hover,
+.background-column__button:focus {
     color: var(--four-color);
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);

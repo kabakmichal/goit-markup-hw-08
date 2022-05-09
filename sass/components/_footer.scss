@@ -25,19 +25,19 @@
     color: var(--third-color);
 }
 
-.link-footer {
+.foot-list__link {
     text-decoration: none;
     color: var(--third-color);
     opacity: 60%;
     line-height: 1.71;
 }
 
-.link-footer-adres {
+.link-footer__adres {
     opacity: 100%;
 }
 
-.link-footer:hover,
-.link-footer:focus{
+.foot-list__link:hover,
+.foot-list__link:focus{
     color: var(--secondary-color);
     opacity: 100%;
     transition-duration: 250ms;
@@ -48,11 +48,11 @@
     padding: 9px 0;
 }
 
-.socials-foot {
+.foot-socials {
     padding: 72px 0 100px 0;
 }
 
-.join-us {
+.foot-socials__join-us {
     font-weight: 700;
     color: var(--third-color);
     margin: 0 0 20px 0;
@@ -83,7 +83,7 @@ ol>li:not(:last-child) {
     padding-top: 72px;
 }
 
-.news-head {
+.footer-newsletter__head {
     text-transform: uppercase;
     color: var(--third-color);
     font-size: 14px;
@@ -93,7 +93,7 @@ ol>li:not(:last-child) {
     font-weight: 700;
 }
 
-.footer-form {
+.footer-newsletter__form {
     padding-top: 20px;
     display: flex;
 }
@@ -120,7 +120,7 @@ ol>li:not(:last-child) {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.newsletter-btn {
+.footer-newsletter__button {
     display: flex;
     padding-left: 42px;
     padding-right: 28px;
@@ -138,4 +138,8 @@ ol>li:not(:last-child) {
 .newsletter-btn:focus,
 .newsletter-btn:hover {
     color: var(--third-color);
+}
+
+.team-socials{
+    fill: var(--ninth-color);
 }

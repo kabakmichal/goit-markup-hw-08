@@ -13,7 +13,7 @@
     cursor: pointer;
 }
 
-.client-box {
+.client-boxes__item {
     width: 170px;
     height: 92px;
     border: 1px solid #AFB1B8;
@@ -25,8 +25,8 @@
     fill: var(--ninth-color);
 }
 
-.client-box:hover,
-.client-box:focus {
+.client-boxes__item:hover,
+.client-boxes__item:focus {
     fill: var(--secondary-color);
     border-color: var(--secondary-color);
     transition-duration: 250ms;
