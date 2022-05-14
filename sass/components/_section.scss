@@ -1,6 +1,6 @@
 .section {
-    padding: 94px 0;
-    display: flex;
+    padding: 60px 0;
+    display: block;
     flex-direction: column;
     align-items: center;
 }
@@ -9,6 +9,11 @@
     padding: 25px 100px 25px 100px;
     background-color: var(--seventh-color);
     border-radius: 4px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .lorem {
@@ -17,12 +22,12 @@
     line-height: 1.143;
     margin: 0;
     padding-top: 30px;
+    text-align: center;
 }
 
 .lorem-text {
     font-size: 14px;
     line-height: 1.71;
-    width: 270px;
     color: var(--main-color);
     padding-top: 10px;
     margin: 0;
