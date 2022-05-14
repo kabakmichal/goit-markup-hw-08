@@ -4,21 +4,25 @@
 
 .foot {
     display: flex;
-    flex-direction: row;
-    justify-content: left;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .foot__adres {
-    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .foot-logo {
-    padding: 60px 0 16px 0;
+    padding-bottom: 20px;
 }
 
 .foot-list {
-    flex-direction: column;
-    padding-bottom: 56px;
+    padding-bottom: 60px;
+    text-align: center;
 }
 
 .foot-studio {
@@ -45,17 +49,18 @@
  }
 
 .foot-mail {
-    padding: 9px 0;
+    padding: 8px 0;
 }
 
 .foot-socials {
-    padding: 72px 0 100px 0;
+    padding-bottom: 60px;
 }
 
 .foot-socials__join-us {
     font-weight: 700;
     color: var(--third-color);
     margin: 0 0 20px 0;
+    text-align: center;
 }
 
 .list-foot-socials {
@@ -79,8 +84,8 @@ ol>li:not(:last-child) {
 .footer-newsletter {
     display: flex;
     flex-direction: column;
-    margin-left: 78px;
-    padding-top: 72px;
+    align-items: center;
+    justify-content: center;
 }
 
 .footer-newsletter__head {
@@ -96,10 +101,12 @@ ol>li:not(:last-child) {
 .footer-newsletter__form {
     padding-top: 20px;
     display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .newsletter-input {
-    width: 358px;
+    width: 91vw;
     height: 50px;
     background-color: inherit;
     color: var(--sixth-color);
@@ -130,6 +137,7 @@ ol>li:not(:last-child) {
     max-width: 200px;
     max-height: 50px;
     margin-left: 12px;
+    margin-top: 20px;
 
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
