@@ -23,12 +23,43 @@
         var(--secondary-font);
     color: var(--four-color);
     font-size: 14px;
+    width: 100%;
 }
 
-.container {
+.container{
+    max-width: 100%;
+    padding: 0 15px;
+}
+
+@media screen and (min-width: 480px) {
+    .container {
+        max-width: 480px;
+        padding: 0 15px;
+        margin: 0;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .container{
+        max-width: 768px;
+        padding: 0 15px;
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+        padding: 0 215px;
+        margin: 0;
+    }
+}
+
+/*.container {
     width: 1200px;
     margin: 0 auto;
     box-sizing: content-box;
     display: flex;
     justify-content: center;
-}
+}*/
