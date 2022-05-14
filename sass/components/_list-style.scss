@@ -9,7 +9,8 @@
     padding: 0;
 }
 
-ul.lorem-list>li:not(:last-child) {
+ul.lorem-list>li:not(:last-child),
+ul.team-list>li:not(:last-child) {
     margin-bottom: 30px;
 }
 
