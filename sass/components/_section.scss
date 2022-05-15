@@ -36,7 +36,6 @@
 
 .our-work {
     display: none;
-    max-height: 294px;
 }
 
 .header-under-list {
@@ -81,6 +80,10 @@ figure {
     margin: 0 auto;
 }
 
+.work-list-img{
+    background-size: cover;
+}
+
 @media screen and (min-width: 768px){
     .lorem-list{
         display: flex;
@@ -118,5 +121,10 @@ figure {
 
     .section{
         padding: 94px 0;
+    }
+
+    .section.our-work{
+        padding-top: 0;
+        padding-bottom: 94px;
     }
 }

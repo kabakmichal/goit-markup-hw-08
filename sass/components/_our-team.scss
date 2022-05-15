@@ -1,4 +1,5 @@
 .our-team {
+    display: flex;
     background-color: var(--seventh-color);
 }
 
@@ -75,8 +76,12 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.text-work{
+.text-work:not(:last-child){
     margin-right: 30px;
+}
+
+.our-work__list{
+    display: flex;
 }
 
 @media screen and (min-width: 768px){
@@ -101,11 +106,11 @@
         display: flex;
     }
 
-    .section.our-work{
-        padding: 0 0 94px;
-    }
-
     .header-work{
         padding-bottom: 50px;
+    }
+
+    .team-list__shadow{
+        flex-basis: calc(100% / 4 - 30px);
     }
 }

@@ -10,6 +10,11 @@
     padding-left: 0;
 }
 
+.clients__header{
+    font-size: 36px;
+    padding-bottom: 50px;
+}
+
 .client-boxes {
     flex-basis: calc(100% / 2 - 30px);
     margin-left: 30px;
@@ -39,5 +44,11 @@
 @media screen and (min-width: 768px){
     .client-boxes{
         flex-basis: calc(100% / 3 - 30px);
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .client-boxes{
+        flex-basis: calc(100% / 6 - 30px);
     }
 }
