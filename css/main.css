@@ -1112,7 +1112,7 @@ figure.portfolio-windows {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  width: 528px;
+  width: 94%;
   min-height: 581px;
   background-color: var(--third-color);
   border-radius: 4px;
@@ -1158,7 +1158,7 @@ figure.portfolio-windows {
   text-align: center;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.172;
+  line-height: 1.5;
   letter-spacing: 0.03em;
   margin-bottom: 2px;
   margin: 0;
@@ -1252,20 +1252,28 @@ figure.portfolio-windows {
 }
 
 .statute__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-left: 7px;
   color: var(--main-color);
-  line-height: 24px;
+  line-height: 1.167;
+  font-size: 12px;
 }
 
 .link-statute {
   color: var(--secondary-color);
+  font-size: 12px;
 }
 
 .modal__send-button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 30px;
+  margin-top: 31px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
