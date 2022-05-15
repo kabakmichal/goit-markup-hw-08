@@ -62,6 +62,16 @@
     border-radius: 2px;
 }
 
+.burger-position{
+    position: relative;
+}
+
+.burger-menu{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+}
+
 @media screen and (min-width: 768px) {
     .head {
         padding-top: 21px;
@@ -94,9 +104,6 @@
 
     .burger-menu{
         display: none;
-        position: absolute;
-        top: 10px;
-        right: 15px;
     }
 
     .kontakt{
