@@ -151,3 +151,29 @@ ol>li:not(:last-child) {
 .team-socials{
     fill: var(--ninth-color);
 }
+
+.logo-adres{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 768px){
+    .foot__adres{
+        flex-direction: row;
+        align-items: baseline;
+    }
+
+    .logo-adres{
+        margin-right: 144px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .newsletter-input{
+        max-width: 450px;
+    }
+}

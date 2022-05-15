@@ -177,3 +177,9 @@ input[value="statute"] {
     background-color: var(--secondary-color);
     fill: var(--third-color);
 }
+
+@media screen and (min-width: 768px){
+    .modal{
+        width: 450px;
+    }
+}
