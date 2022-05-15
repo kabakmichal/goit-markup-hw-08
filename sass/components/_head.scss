@@ -8,6 +8,10 @@
     justify-content: space-between;
 }
 
+.kontakt{
+    display: none;
+}
+
 .web {
     text-decoration: none;
     color: var(--secondary-color);
@@ -30,7 +34,136 @@
     line-height: 1.143;
 }
 
-.burger-manu{
+.navigation {
+    min-width: 254px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 93px;
+    align-items: center;
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .head {
+        padding-top: 21px;
+        padding-bottom: 21px;
+    }
+    
+    .navigation{
+        display: flex;
+    }
+
+    .mail-koperta {
+        margin-right: 8px;
+        width: 14px;
+        height: 10px;
+    }
+    
+    .phone-call {
+        margin-right: 8px;
+        width: 10px;
+        height: 14px;
+        fill: var(--main-color);
+    }
+
+    .kontakt__nav{
+        margin-bottom: 10px;
+        font-size: 12px;
+        color: var(--main-color);
+    }
+
+    .burger-menu{
+        display: none;
+    }
+
+    .kontakt{
+        display: block;
+        margin-top: 21px;
+    }
+
+    .phone-kontakt{
+        display: flex;
+        align-items: center;
+    }
+
+    .kontakt__link {
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.167;
+        letter-spacing: 0.02em;
+        text-decoration: none;
+        color: var(--main-color);
+        fill: var(--main-color);
+        transition-property: color, fill;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus {
+            color: var(--secondary-color);
+            fill: var(--secondary-color);
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .head {
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+
+    .phone-call {
+        margin-right: 10px;
+        width: 10px;
+        height: 16px;
+    }
+
+    .mail-koperta {
+        margin-right: 10px;
+        width: 16px;
+        height: 12px;
+    }
+
+    .kontakt__link {
+        margin: 0;
+        margin-right: 30px;
+    }
+
+    .kontakt {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .page-header__contact {
+        font-size: 14px;
+        line-height: 1.143;
+    }
+}
+
+.web:hover,
+.web:focus {
+    color: var(--secondary-color);
+    opacity: 100%;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navigation__current1 {
+    position: relative;
+}
+
+.navigation__current2::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 4px;
+    background-color: var(--secondary-color);
+    bottom: -22px;
+    left: 0;
+    border-radius: 2px;
 }
 
 /*.head {

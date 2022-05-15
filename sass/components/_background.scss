@@ -10,7 +10,7 @@
     margin: 0 auto;
     display: flex;
     background-size: cover;
-    width: 480px;
+    justify-content: center;
 }
 
 .background-column {
@@ -43,7 +43,60 @@
     font-weight: 700;
 }
 
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 320px) and (max-width: 767px),
+screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 320px) and (max-width: 767px),
+screen and (min-resolution: 192dpi) and (min-width: 320px) and (max-width: 767px),
+screen and (min-resolution: 2dppx) and (min-width: 320px) and (max-width: 767px) {
+    .background {
+        background-image:
+            linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url("../images/background/background_mobile@2x.jpg");
+    }
+}
 
+@media screen and (min-width: 768px) {
+    .background {
+        background-image:
+            linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url("../images/background/background_tablet1x.jpg");
+    }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px) and (max-width: 1199px),
+screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px) and (max-width: 1199px),
+screen and (min-resolution: 192dpi) and (min-width: 768px) and (max-width: 1199px),
+screen and (min-resolution: 2dppx) and (min-width: 768px) and (max-width: 1199px) {
+    .background {
+        background-image:
+            linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url("../images/background/background_tablet@2x.jpg");
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .background {
+        background-image:
+            linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url("../images/background/background_desktop1x.jpg");
+
+        &__heading {
+            font-weight: 900;
+            font-size: 44px;
+            line-height: 1.364;
+        }
+    }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px) and (max-width: 1600px),
+screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px) and (max-width: 1600px),
+screen and (min-resolution: 192dpi) and (min-width: 1200px) and (max-width: 1600px),
+screen and (min-resolution: 2dppx) and (min-width: 1200px) and (max-width: 1600px) {
+    .background {
+        background-image:
+            linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url("../images/background/background_desktop@2x.jpg");
+    }
+}
 
 /*.background {
     background-color: var(--fifth-color);
