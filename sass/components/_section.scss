@@ -35,6 +35,7 @@
 
 .our-work {
     max-height: 294px;
+    display: none;
 }
 
 .header-under-list {
@@ -78,4 +79,25 @@
 
 figure {
     margin: 0 auto;
+}
+
+@media screen and (min-width: 768px){
+    .lorem-list{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: -30px;
+        margin-left: -30px;
+    }
+
+    .lorem-list__item {
+        flex-basis: calc(100% / 2 - 30px);
+        margin-top: 30px;
+        margin-left: 30px;
+        margin-bottom: 0 !important;
+    }
+    
+    /*.lorem-list__item:not(:last-child) {
+        margin-bottom: 0;
+    }*/
 }

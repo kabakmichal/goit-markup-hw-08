@@ -352,7 +352,7 @@ ul.team-list > li:not(:last-child) {
 .container {
   max-width: 100%;
   padding: 0 15px;
-  margin: 0;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 480px) {
@@ -368,7 +368,7 @@ ul.team-list > li:not(:last-child) {
   .container {
     max-width: 768px;
     padding: 0 15px;
-    margin: 0;
+    margin: 0 auto;
   }
 }
 
@@ -376,7 +376,7 @@ ul.team-list > li:not(:last-child) {
   .container {
     max-width: 1200px;
     padding: 0 215px;
-    margin: 0;
+    margin: 0 auto;
   }
 }
 
@@ -589,6 +589,7 @@ ul.team-list > li:not(:last-child) {
 
 .our-work {
   max-height: 294px;
+  display: none;
 }
 
 .header-under-list {
@@ -635,6 +636,32 @@ ul.team-list > li:not(:last-child) {
 
 figure {
   margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .lorem-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+  }
+  .lorem-list__item {
+    -ms-flex-preferred-size: calc(100% / 2 - 30px);
+        flex-basis: calc(100% / 2 - 30px);
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-bottom: 0 !important;
+  }
+  /*.lorem-list__item:not(:last-child) {
+        margin-bottom: 0;
+    }*/
 }
 
 .our-team {
