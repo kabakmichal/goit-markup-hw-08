@@ -183,3 +183,21 @@ input[value="statute"] {
         width: 450px;
     }
 }
+
+@media screen and (min-width: 1200px){
+    .modal{
+        width: 528px;
+    }
+
+    .statute__text{
+        font-size: 14px;
+        letter-spacing: 0.03em;
+        line-height: 1.714;
+    }
+
+    .link-statute {
+        font-size: 14px;
+        letter-spacing: 0.03em;
+        line-height: 1.714;
+    }
+}

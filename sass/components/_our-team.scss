@@ -11,8 +11,8 @@
 }
 
 .employee-list-img {
-    width: 270px;
-    height: 260px;
+    width: 370px;
+    height: 294px;
 }
 
 .image-title {
@@ -75,6 +75,10 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.text-work{
+    margin-right: 30px;
+}
+
 @media screen and (min-width: 768px){
     .team-list{
         display: flex;
@@ -89,5 +93,19 @@
             margin-top: 30px;
             margin-bottom: 0 !important;
         }
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .our-work{
+        display: flex;
+    }
+
+    .section.our-work{
+        padding: 0 0 94px;
+    }
+
+    .header-work{
+        padding-bottom: 50px;
     }
 }

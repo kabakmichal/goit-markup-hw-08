@@ -18,12 +18,13 @@
     </head>
 
     <body class="web-st">
-        <header class="container head">
-            <a href="#" class="web logo">Web<span class="link logo">Studio</span></a>
+        <header class="head">
+            <div class="container">
+                <a href="#" class="web logo">Web<span class="link logo">Studio</span></a>
 
-            <svg class="burger-menu" width="24" height="16" data-menu-open>
-                <use href="./images/icons.svg#icon-burger_menu"></use>
-            </svg>
+                <svg class="burger-menu" width="24" height="16" data-menu-open>
+                    <use href="./images/icons.svg#icon-burger_menu"></use>
+                </svg>
 
                 <nav class="navigation">
                     <a href="index.html" class="link navigation__current1 navigation--active">Agencja<span class="navigation__current2"></span></a>
@@ -45,8 +46,8 @@
                             <use href="./images/icons.svg#icon-smartphone"></use>
                         </svg>+48111111111
                     </a>
-
                 </p>
+            </div>
         </header>
 
         <main>
@@ -60,8 +61,8 @@
                 </div>
             </div>
 
-            <div class="container">
-                <div class="section">
+            <div class="section">
+                <div class="container">
                         <ul class="lorem-list">
                             <li class="lorem-list__item">
                                 <div class="antena icons-advantages" alt="antena">
@@ -117,31 +118,45 @@
         <section>
             <div class="section our-work">
                 <div class="container">
-                    <h2 class="header-under-list">Czym się zajmujemy</h2>
-                </div>
+                    <h2 class="header-under-list header-work">Czym się zajmujemy</h2>
 
-                <div class="container">
                     <ul class="list-style our-work">
 
                         <li class="text-work">
-                            <img src="images/keyboard_ipad.jpg" class="work-list-img" alt="writing on ipad with keyboard"/>
-                            <a class="text-our-work">
-                                aplikacje komputerowe
-                            </a>
+                            <div class="text-work__item">
+                                <img class="work-list-img" src="./images/activities/keyboard_ipad_desktop1x.jpg", srcset="./images/activities/keyboard_ipad_desktop1x.jpg 1x, ./images/activities/keyboard_ipad_desktop@2x.jpg 2x" alt="writing on ipad with keyboard"/>
+                                <div class="text-work__header">
+                                    <p class="text-our-work">
+                                    aplikacje komputerowe
+                                    </p>
+                                </div>
+                            </div>
                         </li>
 
                         <li class="text-work">
-                            <img src="images/phone_macbook.jpg" class="work-list-img" alt="synchronization phone with macbook"/>
-                            <a class="text-our-work">
-                                aplikacje mobilne
-                            </a>
+                            <div class="text-work__item">
+                                <img class="work-list-img" src="./images/activities/phone_macbook_desktop1x.jpg" ,
+                                    srcset="./images/activities/phone_macbook_desktop1x.jpg 1x, ./images/activities/phone_macbook_desktop@2x.jpg 2x"
+                                    alt="writing on ipad with keyboard" />
+                                <div class="text-work__header">
+                                    <p class="text-our-work">
+                                        aplikacje mobilne
+                                    </p>
+                                </div>
+                            </div>
                         </li>
 
                         <li class="text-work">
-                            <img src="images/ipad_paint.jpg" class="work-list-img" alt="painting on ipad"/>
-                            <a class="text-our-work">
-                                rozwiązania graficzne
-                            </a>
+                            <div class="text-work__item">
+                                <img class="work-list-img" src="./images/activities/ipad_paint_desktop1x.jpg" ,
+                                    srcset="./images/activities/ipad_paint_desktop1x.jpg 1x, ./images/activities/ipad_paint_desktop@2x.jpg 2x"
+                                    alt="writing on ipad with keyboard" />
+                                <div class="text-work__header">
+                                    <p class="text-our-work">
+                                        rozwiązania graficzne
+                                    </p>
+                                </div>
+                            </div>
                         </li>
                     </ul>
                 </div>

@@ -1,11 +1,7 @@
 .head{
     min-width: 100%;
-    height: 60px;
     align-items: center;
     border: 1px solid #ECECEC;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 }
 
 .kontakt{
@@ -43,6 +39,29 @@
     display: none;
 }
 
+.web:hover,
+.web:focus {
+    color: var(--secondary-color);
+    opacity: 100%;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navigation__current1 {
+    position: relative;
+}
+
+.navigation__current2::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 4px;
+    background-color: var(--secondary-color);
+    bottom: -33px;
+    left: 0;
+    border-radius: 2px;
+}
+
 @media screen and (min-width: 768px) {
     .head {
         padding-top: 21px;
@@ -50,6 +69,8 @@
     }
     
     .navigation{
+        margin-right: 101px;
+        margin-left: 83px;
         display: flex;
     }
 
@@ -67,7 +88,6 @@
     }
 
     .kontakt__nav{
-        margin-bottom: 10px;
         font-size: 12px;
         color: var(--main-color);
     }
@@ -78,7 +98,7 @@
 
     .kontakt{
         display: block;
-        margin-top: 21px;
+        margin: 0;
     }
 
     .phone-kontakt{
@@ -99,6 +119,7 @@
         transition-property: color, fill;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        margin-bottom: 10px;
 
         &:hover,
         &:focus {
@@ -109,9 +130,12 @@
 }
 
 @media screen and (min-width: 1200px) {
+    .web{
+        line-height: 1.174;
+    }
+
     .head {
-        padding-top: 24px;
-        padding-bottom: 24px;
+        padding: 24px 0;
     }
 
     .phone-call {
@@ -135,36 +159,25 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        min-height: 100%;
+        margin: 0;
+
+        &__nav{
+            font-size: 14px;
+            margin-bottom: 0;
+        }
     }
 
-    .page-header__contact {
-        font-size: 14px;
-        line-height: 1.143;
+    .navigation{
+        width: 599px;
+        margin-right: 345px;
+    }
+
+    .navigation__current2::after {
+        bottom: -33px;
     }
 }
 
-.web:hover,
-.web:focus {
-    color: var(--secondary-color);
-    opacity: 100%;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.navigation__current1 {
-    position: relative;
-}
-
-.navigation__current2::after {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 4px;
-    background-color: var(--secondary-color);
-    bottom: -22px;
-    left: 0;
-    border-radius: 2px;
-}
 
 /*.head {
     width: 100%;
