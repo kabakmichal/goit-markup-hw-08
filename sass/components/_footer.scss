@@ -159,6 +159,10 @@ ol>li:not(:last-child) {
     align-items: center;
 }
 
+.container.foot{
+    padding: 60px 0;
+}
+
 @media screen and (min-width: 768px){
     .foot__adres{
         flex-direction: row;
