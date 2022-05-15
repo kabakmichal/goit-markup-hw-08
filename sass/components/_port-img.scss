@@ -114,6 +114,13 @@
     }
 }
 
+@media screen and (min-width: 1200px){
+    .portfolio-images__item{
+        flex-basis: calc(100% / 3 - 30px);
+        
+    }
+}
+
 /*.portfolio-images {
     display: flex;
     flex-wrap: wrap;
